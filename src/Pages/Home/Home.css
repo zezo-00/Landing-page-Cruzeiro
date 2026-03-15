@@ -24,12 +24,15 @@ body {
 }
 
 .hero-bg-container {
-  height: 100vh; 
+  position: relative;
+  min-height: 100vh; 
+  display: flex;
   flex-direction: column;
   background-image: linear-gradient(to bottom, rgba(7, 11, 20, 0.7), rgba(7, 11, 20, 1)), url('/assets/images/mineirao1_hd.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -38,7 +41,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 6%;
+  padding: 2rem 6%;
+  z-index: 10;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
@@ -97,6 +101,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  transform: translateY(-3rem);
 }
 
 .expo-tag {
@@ -143,28 +148,44 @@ body {
 }
 
 
+/* --- MOBILE hOME --- */
 @media (max-width: 768px) {
   .cruzeiro-header {
     flex-direction: column;
+    align-items: center; 
     gap: 1.5rem;
     padding: 2rem 5%;
   }
 
   .header-nav {
     gap: 1.5rem;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    flex-wrap: wrap; 
+    justify-content: center;
   }
 
   .header-year {
     display: none; 
   }
 
+  .hero-section {
+    padding: 0 5% 4rem 5%; 
+  }
+
+  .hero-content {
+    gap: 1.5rem; 
+    transform: translateY(-1rem); 
+  }
+
   .hero-title {
-    font-size: 3.5rem; 
+    font-size: 3rem; 
+    letter-spacing: -1px;
+    line-height: 1.1;
   }
 
   .hero-description {
-    font-size: 1rem;
-    max-width: 100%;
+    font-size: 0.95rem; 
+    line-height: 1.6;
+    padding: 0 10px; 
   }
 }

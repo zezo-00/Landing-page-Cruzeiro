@@ -1,7 +1,6 @@
 import './Lendas.css';
 
 export const Lendas = () => {
-  // Lista com os dados exatos do seu Figma
   const jogadores = [
     {
       id: '01',

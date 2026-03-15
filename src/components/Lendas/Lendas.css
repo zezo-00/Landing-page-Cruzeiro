@@ -1,6 +1,6 @@
 .lendas-section {
   padding: 10rem 6% 8rem 6%;
-  background-color: #01040D; /* Fundo escuro imersivo exato do design */
+  background-color: #01040D; 
   color: white;
 }
 
@@ -19,7 +19,7 @@
   position: relative;
   display: flex;
   align-items: center; 
-  gap: 10rem; /* Gap largo exato do design */
+  gap: 10rem; 
   min-height: 700px;
 }
 
@@ -55,7 +55,8 @@
   z-index: 2; 
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil exata do design */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
 }
 
 .lenda-image-wrapper::after {
@@ -119,7 +120,7 @@
   font-family: var(--font-text); 
   font-size: 1.2rem;
   line-height: 2; 
-  color: #A4B2C6; /* Cor suave exata para leitura */
+  color: #A4B2C6; 
   font-weight: 300;
   max-width: 500px; 
 }
@@ -131,7 +132,7 @@
   }
 
   .lendas-list {
-    gap: 6rem; /* Diminuindo o espaço entre jogadores */
+    gap: 6rem; 
   }
 
   .lenda-card, 

@@ -1,7 +1,6 @@
 import './Trofeus.css';
 
 export const Trofeus = () => {
-  // Lista de conquistas baseada no seu design do Figma
   const conquistas = [
     {
       id: '01',

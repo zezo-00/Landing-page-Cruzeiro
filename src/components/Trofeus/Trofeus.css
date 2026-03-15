@@ -85,7 +85,7 @@
   font-size: 2.2rem;
   line-height: 1.1;
   font-weight: 600;
-  white-space: pre-line; /* Respeita as quebras de linha do React */
+  white-space: pre-line; 
 }
 
 .trofeu-info {
@@ -120,23 +120,32 @@
 }
 
 
+/* --- MOBILE --- */
 @media (max-width: 768px) {
   .trofeus-section {
-    padding: 4rem 5%;
+    padding: 5rem 5%; 
   }
 
   .trofeu-item {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
-    padding: 2rem 0;
+    gap: 0.5rem; 
+    padding: 2.5rem 0;
   }
 
   .trofeu-qtd {
-    font-size: 5rem; 
+    font-size: 4.5rem; 
+    line-height: 1;
+    margin-bottom: -10px; 
   }
 
   .trofeu-info h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trofeu-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
