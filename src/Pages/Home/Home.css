@@ -1,0 +1,146 @@
+/* Importando as fontes direto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Cores baseadas no seu design escuro */
+  --cruzeiro-dark: #070b14;
+  --cruzeiro-blue: #003a70;
+  --text-light: #e0e6ed;
+  
+  /* Variáveis de fonte para facilitar */
+  --font-title: 'Playfair Display', serif;
+  --font-text: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cruzeiro-dark);
+  color: white;
+  font-family: var(--font-text);
+}
+
+.hero-bg-container {
+  height: 100vh; /* foto com 1 tela de altura */
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(7, 11, 20, 0.7), rgba(7, 11, 20, 1)), url('/assets/images/mineirao1_hd.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* --- HEADER (MENU SUPERIOR) --- */
+.cruzeiro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 6%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand h2 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.brand span {
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: #8b9bb4;
+}
+
+.header-nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #8b9bb4;
+}
+
+.header-year {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+/* --- CONTEÚDO PRINCIPAL (HERO) --- */
+.hero-section {
+  flex: 1; /* Ocupa o restante da tela abaixo do header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.expo-tag {
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  color: #8b9bb4;
+  text-transform: uppercase;
+}
+
+/* Título Gigante Serifado */
+.hero-title {
+  font-family: var(--font-title);
+  font-size: 5.5rem; /* Bem grande, como no seu Figma */
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  max-width: 700px;
+  font-weight: 300;
+}
+
+/* DIVISOR DE SEÇÕES */
+.section-divider {
+  width: 88%; 
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.05); 
+  margin: 2rem auto 2rem auto; 
+}
+
+
+.hero-title .gradient-highlight {
+  font-family: 'Playfair Display', serif; 
+  
+  background-image: linear-gradient(230deg, #FFFFFF 0%, #3064ad 100%); /* Degradê vertical do branco para o cinza-azulado */
+  -webkit-background-clip: text; /* Corta o degradê para o formato do texto */
+  background-clip: text;
+  color: transparent; /* Torna a cor sólida transparente para o degradê aparecer */
+  
+  letter-spacing: -3px; 
+}

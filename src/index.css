@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #070b14; /* Nossa cor escura de fundo */
+}
+
+/* O Vite coloca as coisas dentro dessa div #root, então precisamos dizer para ela ocupar a tela toda também */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

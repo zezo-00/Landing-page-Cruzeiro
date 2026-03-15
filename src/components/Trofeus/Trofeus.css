@@ -1,0 +1,124 @@
+/* --- CONTAINER DA SALA DE TROFÉUS --- */
+.trofeus-section {
+  padding: 8rem 6%;
+  background-color: var(--cruzeiro-dark); /* Puxa a cor escura do home.css */
+  color: white;
+}
+
+/* --- CABEÇALHO DA SEÇÃO --- */
+.section-header {
+  margin-bottom: 6rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  color: #8b9bb4;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* --- LISTA DE CONQUISTAS --- */
+.trofeus-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cada linha de troféu */
+.trofeu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* A linha fina separadora */
+}
+
+/* Tira a linha do último item para ficar limpo no final */
+.trofeu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* --- O NÚMERO GIGANTE DE FUNDO --- */
+.trofeu-number {
+  font-family: var(--font-text);
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.03); /* Quase transparente */
+  width: 150px;
+}
+
+/* --- CONTEÚDO DA DIREITA --- */
+.trofeu-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.trofeu-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* O número azul (Ex: 2, 4, 6) */
+.trofeu-qtd {
+  font-family: var(--font-title);
+  font-size: 5.5rem;
+  color: #4a90e2; /* Tom de azul elegante */
+  line-height: 1;
+}
+
+.trofeu-name {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  line-height: 1.1;
+  font-weight: 600;
+  white-space: pre-line; /* Respeita as quebras de linha do React */
+}
+
+.trofeu-info {
+  flex: 1.2;
+  max-width: 600px;
+}
+
+.trofeu-years {
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #8b9bb4;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.trofeu-desc {
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  font-weight: 300;
+}
+
+.section-title .gradient-trofeus {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #727272;
+  font-style: oblique ;
+  
+
+}
