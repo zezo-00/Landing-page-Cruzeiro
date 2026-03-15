@@ -27,36 +27,33 @@
   line-height: 1;
 }
 
-/* --- LISTA DE CONQUISTAS --- */
 .trofeus-list {
   display: flex;
   flex-direction: column;
 }
 
-/* Cada linha de troféu */
 .trofeu-item {
   display: flex;
   align-items: flex-start;
   gap: 4rem;
   padding-bottom: 5rem;
   margin-bottom: 5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* A linha fina separadora */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
-/* Tira a linha do último item para ficar limpo no final */
 .trofeu-item:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* --- O NÚMERO GIGANTE DE FUNDO --- */
+/* --- O NÚMERO  DE FUNDO --- */
 .trofeu-number {
   font-family: var(--font-text);
   font-size: 8rem;
   font-weight: 600;
   line-height: 0.8;
-  color: rgba(255, 255, 255, 0.03); /* Quase transparente */
+  color: rgba(255, 255, 255, 0.03); 
   width: 150px;
 }
 
@@ -76,11 +73,10 @@
   flex: 1;
 }
 
-/* O número azul (Ex: 2, 4, 6) */
 .trofeu-qtd {
   font-family: var(--font-title);
   font-size: 5.5rem;
-  color: #4a90e2; /* Tom de azul elegante */
+  color: #4a90e2; 
   line-height: 1;
 }
 
@@ -121,4 +117,26 @@
   font-style: oblique ;
   
 
+}
+
+
+@media (max-width: 768px) {
+  .trofeus-section {
+    padding: 4rem 5%;
+  }
+
+  .trofeu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  .trofeu-qtd {
+    font-size: 5rem; 
+  }
+
+  .trofeu-info h3 {
+    font-size: 1.8rem;
+  }
 }

@@ -37,7 +37,6 @@ export const Trofeus = () => {
       <div className="trofeus-list">
         {conquistas.map((item) => (
           <div className="trofeu-item" key={item.id}>
-            {/* Número gigante na esquerda */}
             <div className="trofeu-number">{item.id}</div>
             
             {/* Conteúdo da direita (Nome, quantidade, anos e texto) */}
